@@ -1,15 +1,15 @@
 const comidas =[
-"Banana", "Marzipã", "Polenta", "Chocolate", "Donuts", "BatataFrita", "Lasanha", "Sorvete",
-"Hamburguer", "Hushpuppies", "Chimichangas", "Coxinha"
+"banana", "marzipã", "polenta", "chocolate", "donuts", "batatafrita", "lasanha", "sorvete",
+"hamburguer", "hushpuppies", "chimichangas", "coxinha"
 ];
 const lugares =[
-"Tailandia", "Mexico", "Irlanda", "EstadosUnidos", "Alemanha", "Japão", "NovaYorque",
-"MachuPicchu", "ChapadaDiamantina", "Yucatan"
+"tailandia", "mexico", "irlanda", "estadosunidos", "alemanha", "japão", "novayorque",
+"machupicchu", "chapadadiamantina", "yucatan"
 
 ];
 const tenteASorte =[
-"pluridimensionalidade", "interdisciplinaridade ", "extraterritorialidade", "Hebdomadario", 
-"Kafkaesco", "Modorrento", "Numismatica"
+"pluridimensionalidade", "interdisciplinaridade ", "extraterritorialidade", "hebdomadario", 
+"kafkaesco", "modorrento", "numismatica"
 ];
 
 const imgFinal = document.querySelector(".imgfinal");
