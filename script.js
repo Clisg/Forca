@@ -1,11 +1,15 @@
 const comidas =[
-"banana", "calopsita", "polenta", "chocolate", "pimenta"
+"Banana", "Marzipã", "Polenta", "Chocolate", "Donuts", "BatataFrita", "Lasanha", "Sorvete",
+"Hamburguer", "Hushpuppies", "Chimichangas", "Coxinha"
 ];
 const lugares =[
+"Tailandia", "Mexico", "Irlanda", "EstadosUnidos", "Alemanha", "Japão", "NovaYorque",
+"MachuPicchu", "ChapadaDiamantina", "Yucatan"
 
 ];
 const tenteASorte =[
-
+"pluridimensionalidade", "interdisciplinaridade ", "extraterritorialidade", "Hebdomadario", 
+"Kafkaesco", "Modorrento", "Numismatica"
 ];
 
 var palavraSecreta= null;
@@ -98,6 +102,8 @@ function sorteiaArray (array){
         
         palavraSecreta= array[Math.floor(Math.random()*array.length)];
         console.log(palavraSecreta, Math.floor(Math.random()*array.length));
+        const div = document.querySelector(".letras-erradas-container");
+        div.focus();
 }
 function decideTema(event){
     var valor = event.target.value;
