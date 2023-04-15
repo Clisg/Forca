@@ -12,6 +12,11 @@ const tenteASorte =[
 "Kafkaesco", "Modorrento", "Numismatica"
 ];
 
+const imgFinal = document.querySelector(".imgfinal");
+const seletor = document.querySelector("select");
+
+imgFinal.style.display = "none";
+
 var palavraSecreta= null;
 const letrasErradas = [];
 const letrasCorretas = [];
@@ -76,6 +81,9 @@ function checarJogo(){
     if (mensagem) {
         document.querySelector("#mensagem").innerHTML = mensagem;
         document.querySelector(".popup-container").style.display = "flex";
+        imgFinal.style.display = "";
+        seletor.disabled = false;
+
     }
 }
 
@@ -116,6 +124,7 @@ function decideTema(event){
     if (valor == "Tente a Sorte"){
         sorteiaArray(tenteASorte);
     }
+    seletor.disabled = true;
     console.log(event.target.value);
 
 }
